@@ -6,7 +6,7 @@
 
 ### Demo
 
-[Example Page](?/blog/example.md)
+[Example Page](?blog/example.md)
 
 ### Usage
 

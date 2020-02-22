@@ -3,7 +3,7 @@ var url = window.location.search.substring(1),
 if (url == "") {
     markdown.innerHTML = marked(load("/index.md"));
 } else {
-    document.title = url.match(/.*\/(.*).md/)[1];
+    document.title = url.match(/.*\/(.*).md/) ? url.match(/.*\/(.*).md/)[1] : url.match(/(.*).md/)[1];
     markdown.innerHTML = marked(load(url));
 }
 function load(name) {
