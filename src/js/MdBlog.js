@@ -1,9 +1,10 @@
 var url = window.location.search.substring(1),
-    markdown = document.getElementsByClassName("markdown-body")[0];
+    markdown = document.getElementsByClassName("markdown-body")[0],
+    s;
 if (url == "") {
     markdown.innerHTML = marked(load("/index.md"));
 } else {
-    document.title = url.match(/.*\/(.*).md/) ? url.match(/.*\/(.*).md/)[1] : url.match(/(.*).md/)[1];
+    document.title = (s = url.match(/.*\/(.*).md/)) ? s[1] : (s = url.match(/(.*).md/)) ? s[1] : document.title;
     markdown.innerHTML = marked(load(url));
 }
 function load(name) {
