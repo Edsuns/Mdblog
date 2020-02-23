@@ -24,6 +24,8 @@ Put the code below in where you want to show the article
     <script src="src/js/MdBlog.js"></script>
 ```
 
+>Default page is `index.md` which is also the home page
+
 ### Link
 
 Add "?" before the location
@@ -48,7 +50,7 @@ _e.g._
 [目录 Catalog](?blog/index.md)
 ```
 
-[目录 Catalog](?blog/index.md)
+[目录 Catalog](https://edsuns.github.io/Mdblog/?blog/index.md)
 
 ## Dependents
 - [marked](https://github.com/markedjs/marked)
