@@ -4,6 +4,8 @@
 
 >Blog in a new form based on Markdown viewer
 
+__[Github Repo](https://github.com/Edsuns/Mdblog)__
+
 ### Demo
 
 [Example Page](?blog/example.md)
