@@ -5,7 +5,7 @@
  */
 var url = window.location.search.substring(1),
     markdown = document.getElementsByClassName("markdown-body")[0],
-    index = "./index.md",
+    index = "index.md",
     s;
 if (url == "") {
     markdown.innerHTML = marked(load(index));
