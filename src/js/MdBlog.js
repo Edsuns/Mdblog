@@ -1,3 +1,8 @@
+/**
+ * MdBlog
+ * Copyright (c) 2020, Edsuns. (MIT Licensed)
+ * https://github.com/Edsuns/Mdblog
+ */
 var url = window.location.search.substring(1),
     markdown = document.getElementsByClassName("markdown-body")[0],
     s;
