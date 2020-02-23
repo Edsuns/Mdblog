@@ -1,8 +1,8 @@
 # Blog with Markdown
 
->展示Markdown的博客形式
+>展示Markdown的博客新形式
 
->Blog in a new form based on Markdown reader
+>Blog in a new form based on Markdown viewer
 
 ### Demo
 
