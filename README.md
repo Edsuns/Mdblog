@@ -6,7 +6,7 @@
 
 ### Demo
 
-[Example Page](https://edsuns.github.io/Mdblog/)
+[Edsuns.github.io/Mdblog](https://edsuns.github.io/Mdblog/)
 
 ## Usage
 
