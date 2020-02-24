@@ -15,12 +15,10 @@
 Put the code below in where you want to show the article
 
 ```html
-    <article class="markdown-body">
-    </article>
+    <article class="markdown-body"></article>
     <link rel="stylesheet" href="src/css/github-markdown.css">
     <link rel="stylesheet" href="src/css/github.css">
     <script src="src/js/highlight.min.js"></script>
-    <script>var rootDir="./";</script>
     <script src="src/js/marked.min.edsuns.js"></script>
     <script src="src/js/MdBlog.js"></script>
 ```

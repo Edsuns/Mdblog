@@ -8,12 +8,8 @@ var url = window.location.search.substring(1),
     index = "index.md",
     s;
 url[0] == "/" || url[0] == "\\" ? url = url.substring(1) : 0;
-if (url == "") {
-    markdown.innerHTML = marked(load(index));
-} else {
-    document.title = (s = url.match(/(.*\/)(.*).md/)) ? (rootDir = decodeURI(s[1]), decodeURI(s[2])) : (s = url.match(/(.*).md/)) ? decodeURI(s[1]) : document.title;
-    markdown.innerHTML = marked(load(url));
-}
+(s = /(.*?)([^\/]*).md$/.exec(url)) ? (rootDir = s[1], document.title = decodeURI(s[2])) : url = index;
+markdown.innerHTML = marked(load(url));
 function load(name) {
     let xhr = new XMLHttpRequest();
     xhr.open("GET", name, false);
