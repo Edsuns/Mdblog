@@ -7,10 +7,11 @@ var url = window.location.search.substring(1),
     markdown = document.getElementsByClassName("markdown-body")[0],
     index = "index.md",
     s;
+url[0] == "/" || url[0] == "\\" ? url = url.substring(1) : 0;
 if (url == "") {
     markdown.innerHTML = marked(load(index));
 } else {
-    document.title = (s = url.match(/.*\/(.*).md/)) ? s[1] : (s = url.match(/(.*).md/)) ? s[1] : document.title;
+    document.title = (s = url.match(/(.*\/)(.*).md/)) ? (rootDir = decodeURI(s[1]), decodeURI(s[2])) : (s = url.match(/(.*).md/)) ? decodeURI(s[1]) : document.title;
     markdown.innerHTML = marked(load(url));
 }
 function load(name) {
