@@ -8,7 +8,7 @@ var url = window.location.search.substring(1),
     index = "index.md",
     s;
 url[0] == "/" || url[0] == "\\" ? url = url.substring(1) : 0;
-(s = /(.*?)([^\/]*).md$/.exec(url)) ? (rootDir = s[1], document.title = decodeURI(s[2])) : url = index;
+(s = /(.*?)([^\/]*).md$/.exec(url)) ? (mdDir = s[1], document.title = decodeURI(s[2])) : url = index;
 markdown.innerHTML = marked(load(url));
 function load(name) {
     let xhr = new XMLHttpRequest();
