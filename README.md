@@ -16,9 +16,7 @@ Put the code below in where you want to show the article
 
 ```html
     <article class="markdown-body"></article>
-    <link rel="stylesheet" href="src/css/github-markdown.css">
-    <link rel="stylesheet" href="src/css/github.css">
-    <script src="src/js/highlight.min.js"></script>
+    <link rel="stylesheet" href="src/css/github-markdown.min.css">
     <script src="src/js/marked.ed.js"></script>
     <script src="src/js/MdBlog.js"></script>
 ```
@@ -55,5 +53,3 @@ _e.g._
 - [marked](https://github.com/markedjs/marked)
 
 - [github-markdown.css](https://github.com/sindresorhus/github-markdown-css)
-
-- [highlight.js](https://github.com/highlightjs/highlight.js)
