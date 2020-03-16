@@ -44,7 +44,7 @@ body {
     bottom: 23%;
     right: 20%;
     width: 150px;
-    height: 192px;
+    height: fit-content;
     z-index: 101;
     display: none;
     text-align: center;
