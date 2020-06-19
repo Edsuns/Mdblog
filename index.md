@@ -8,10 +8,10 @@ __[Github Repo](https://github.com/Edsuns/Mdblog)__
 
 ### Demo
 
-[Example Page](?blog/example.md)
+[Example Page](?blog/example)
 
-[目录 Catalog](?blog/index.md)
+[目录 Catalog](?blog/index)
 
 ### About
 
-[README.md](?README.md)
+[README](?README)
